@@ -1,0 +1,73 @@
+/*$color1: #18B292;
+$color2: #63FFDE;
+$color3: #49FFD9;
+$color4: #B23A10;
+$color5: #FF7949;*/
+/*$color1: #000000;
+$color2: #63FFDE;
+$color3: #49FFD9;
+$color4: #B23A10;
+$color5: #FF7949;*/
+@import url("https://fonts.googleapis.com/css?family=Lato");
+body {
+  margin: unset;
+  background-color: #222324; }
+
+body {
+  color: azure;
+  font-family: Lato; }
+  body .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 2em 0 2em 0; }
+  body .tskoli {
+    margin: 2em 0 4em 0; }
+  body .title {
+    font-size: 44px;
+    margin: unset;
+    text-align: center; }
+  body ul {
+    margin-bottom: 0px; }
+  body .pac {
+    width: 20px; }
+  body .pac1 {
+    margin-left: 19px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
+  body .map {
+    width: 25%; }
+  body .map-info {
+    margin-left: 1em; }
+    body .map-info p {
+      margin: 0px;
+      font-size: 24px; }
+    body .map-info a {
+      font-size: 20px;
+      color: aquamarine; }
+  body iframe {
+    overflow: hidden; }
+  body footer {
+    margin-bottom: 0px !important;
+    width: 100%;
+    background-color: #3D3E3F; }
+    body footer img {
+      width: 25%; }
+    body footer div {
+      margin-left: 1em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+      flex-flow: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      body footer div p {
+        margin: 0px; }

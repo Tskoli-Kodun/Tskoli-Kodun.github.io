@@ -1,0 +1,78 @@
+@import 'main';
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+
+	color: azure;
+	font-family: Lato;
+
+	.info {
+		display: flex;
+		justify-content: center;
+		margin: 2em 0 2em 0;
+	}
+
+	.tskoli {
+		margin: 2em 0 4em 0;
+	}
+
+	.title {
+		font-size: 44px;
+		margin: unset;
+		text-align: center;
+	}
+
+	ul {
+		margin-bottom: 0px;
+	}
+
+	.pac {
+		width: 20px;
+	}
+
+	.pac1 {
+		margin-left: 19px;
+		transform: rotate(-90deg);
+	}
+
+	.map {
+		width: 25%;
+		//margin-left: -3em;
+	}
+
+	.map-info {
+		margin-left: 1em;
+
+		p {
+			margin: 0px;
+			font-size: 24px;
+		}
+
+		a {
+			font-size: 20px;
+			color: aquamarine;
+		}
+	}
+
+	iframe {
+		overflow: hidden;
+	}
+
+	footer {
+		margin-bottom: 0px !important;
+		width: 100%;
+		background-color: $color2;
+		img {
+			width: 25%;
+		}
+		div {
+			margin-left: 1em;
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			p {
+				margin: 0px;
+			}
+		}
+	}
+}

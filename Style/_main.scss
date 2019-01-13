@@ -1,6 +1,9 @@
 @import 'color';
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 body {
 	margin: unset;
 	background-color: $color1;
+	color: $text1;
+	font-family: Lato;
 }

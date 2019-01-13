@@ -1,19 +1,52 @@
 @import 'main';
-@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@mixin center {
+	display: flex;
+	justify-content: center;
+	margin: 2em 0 2em 0;
+}
 
 body {
-
-	color: azure;
-	font-family: Lato;
-
-	.info {
+	header {
+		background-color: $color2;
+		color: $text2;
 		display: flex;
-		justify-content: center;
+		user-select: none;
+
+		iframe {
+			border: unset;
+			margin: 0.5em;
+		}
+
+		section {
+			display: flex;
+			flex-grow: 1;
+
+			.header-option {
+				flex-grow: 1;
+				display: flex;
+				flex-flow: column;
+				justify-content: center;
+				border-left: 0.15em $color2 * 1.2 solid;
+				transition: 0.2s;
+
+				&:hover {
+					cursor: pointer;
+					background-color: $color2 * 1.2;
+				}
+			}
+		}
+	}
+
+	.centered {
+		@include center;
 		margin: 2em 0 2em 0;
 	}
 
-	.tskoli {
-		margin: 2em 0 4em 0;
+	.centered-column {
+		@include center;
+		margin: unset;
+		flex-flow: column;
 	}
 
 	.title {
@@ -22,7 +55,21 @@ body {
 		text-align: center;
 	}
 
-	ul {
+	.info {
+		@include center;
+		justify-content: space-around;
+		
+		.info-child {
+			width: calc((100% / 3));
+		}
+	}
+
+	.pac {
+		width: 20% !important;
+		transform: scale(-1);
+	}
+
+	/*ul {
 		margin-bottom: 0px;
 	}
 
@@ -56,15 +103,18 @@ body {
 
 	iframe {
 		overflow: hidden;
-	}
+	}*/
 
 	footer {
+		color: $text2;
 		margin-bottom: 0px !important;
 		width: 100%;
 		background-color: $color2;
+
 		img {
 			width: 25%;
 		}
+
 		div {
 			margin-left: 1em;
 			display: flex;

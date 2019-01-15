@@ -15,11 +15,13 @@ $dark: true;
 
 $color1: #222324;
 $color2: #3D3E3F;
+$color3: pink;
 $text1: azure;
 $text2: azure;
 
 @if $dark == false {
 	$color1: azure;
 	$color2: rgb(13, 164, 93);
+	$color3: blue;
 	$text1: black;
 }

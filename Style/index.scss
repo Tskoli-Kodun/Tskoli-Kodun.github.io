@@ -7,15 +7,67 @@
 }
 
 body {
+	.centered {
+		@include center;
+		margin: 2em 0 2em 0;
+	}
+
+	.centered-column {
+		@include center;
+		margin: unset;
+		flex-flow: column;
+	}
+
+	.title {
+		font-size: 44px;
+		margin: unset;
+		text-align: center;
+	}
+
+	.uncentered-title {
+		font-size: 44px;
+		margin: unset;
+	}
+
+	.info {
+		@include center;
+		justify-content: space-around;
+	}
+
+	.info-child {
+		width: calc((100% / 4));
+	}
+
+	.uncentered {
+		@include center;
+		justify-content: space-between;
+	}
+
+	#brain {
+		width: 65%;
+		height: auto;
+		margin-left: calc(35%/2);
+	}
+
+	a {
+		color: $color3;
+	}
+
+	main {
+		display: flex;
+	}
+
 	header {
 		background-color: $color2;
 		color: $text2;
 		display: flex;
 		user-select: none;
+		height: 4em;
 
-		iframe {
+		img {
 			border: unset;
-			margin: 0.5em;
+			margin: 0.1em;
+			height: 90%;
 		}
 
 		section {
@@ -34,76 +86,13 @@ body {
 					cursor: pointer;
 					background-color: $color2 * 1.2;
 				}
+
+				p {
+					font-size: 2em;
+				}
 			}
 		}
 	}
-
-	.centered {
-		@include center;
-		margin: 2em 0 2em 0;
-	}
-
-	.centered-column {
-		@include center;
-		margin: unset;
-		flex-flow: column;
-	}
-
-	.title {
-		font-size: 44px;
-		margin: unset;
-		text-align: center;
-	}
-
-	.info {
-		@include center;
-		justify-content: space-around;
-		
-		.info-child {
-			width: calc((100% / 3));
-		}
-	}
-
-	.pac {
-		width: 20% !important;
-		transform: scale(-1);
-	}
-
-	/*ul {
-		margin-bottom: 0px;
-	}
-
-	.pac {
-		width: 20px;
-	}
-
-	.pac1 {
-		margin-left: 19px;
-		transform: rotate(-90deg);
-	}
-
-	.map {
-		width: 25%;
-		//margin-left: -3em;
-	}
-
-	.map-info {
-		margin-left: 1em;
-
-		p {
-			margin: 0px;
-			font-size: 24px;
-		}
-
-		a {
-			font-size: 20px;
-			color: aquamarine;
-		}
-	}
-
-	iframe {
-		overflow: hidden;
-	}*/
 
 	footer {
 		color: $text2;
@@ -122,6 +111,32 @@ body {
 			justify-content: center;
 			p {
 				margin: 0px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.unflex {
+		flex-flow: column !important;
+	}
+
+	.reflex {
+		display: flex;
+		justify-content: center;
+	}
+
+	.text-reflex {
+		text-align: center;
+	}
+
+	header {
+		height: fit-content !important;
+		section{
+			flex-flow: column;
+			.header-option {
+				border-left: unset;
+				border-top: 0.15em $color2 * 1.2 solid;
 			}
 		}
 	}

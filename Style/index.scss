@@ -29,6 +29,20 @@ body {
 		margin: unset;
 	}
 
+	.small-title {
+		font-size: 26px;
+		margin: unset;
+	}
+
+	.example-info {
+		width: 20em;
+	}
+
+	.invaders {
+		width: 20em;
+		height: 10em;
+	}
+
 	.info {
 		@include center;
 		justify-content: space-around;
@@ -75,12 +89,12 @@ body {
 			flex-grow: 1;
 
 			.header-option {
-				flex-grow: 1;
+				width: calc(100% / 3);
 				display: flex;
 				flex-flow: column;
 				justify-content: center;
 				border-left: 0.15em $color2 * 1.2 solid;
-				transition: 0.2s;
+				transition: background-color 0.2s;
 
 				&:hover {
 					cursor: pointer;
@@ -135,6 +149,7 @@ body {
 		section{
 			flex-flow: column;
 			.header-option {
+				width: 100% !important;
 				height: 6em;
 				border-left: unset;
 				border-top: 0.15em $color2 * 1.2 solid;

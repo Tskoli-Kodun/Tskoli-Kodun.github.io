@@ -135,8 +135,10 @@ body {
 		section{
 			flex-flow: column;
 			.header-option {
+				height: 6em;
 				border-left: unset;
 				border-top: 0.15em $color2 * 1.2 solid;
+				font-size: 1.5em;
 			}
 		}
 	}

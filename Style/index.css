@@ -184,5 +184,7 @@ body footer {
       -ms-flex-flow: column;
       flex-flow: column; }
       header section .header-option {
+        height: 6em;
         border-left: unset;
-        border-top: 0.15em #494a4c solid; } }
+        border-top: 0.15em #494a4c solid;
+        font-size: 1.5em; } }

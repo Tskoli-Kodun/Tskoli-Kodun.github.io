@@ -52,6 +52,16 @@ body .uncentered-title {
   font-size: 44px;
   margin: unset; }
 
+body .bigger-title {
+  font-size: 96px;
+  margin: unset;
+  text-align: center; }
+
+body .big-title {
+  font-size: 64px;
+  margin: unset;
+  text-align: center; }
+
 body .small-title {
   font-size: 26px;
   margin: unset; }
@@ -97,10 +107,8 @@ body #brain {
 body a {
   color: pink; }
 
-body main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+body pre {
+  background-color: #3D3E3F; }
 
 body header {
   background-color: #3D3E3F;
@@ -182,7 +190,9 @@ body footer {
     -ms-flex-pack: center;
     justify-content: center; }
   .text-reflex {
-    text-align: center; }
+    text-align: center !important; }
+  .un-percent {
+    width: 100% !important; }
   header {
     height: -webkit-fit-content !important;
     height: -moz-fit-content !important;

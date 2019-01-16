@@ -67,6 +67,10 @@ body {
 	.uncentered {
 		@include center;
 		justify-content: space-between;
+		user-select: none;
+		* {
+			text-decoration: none;
+		}
 	}
 
 	#brain {
@@ -107,6 +111,8 @@ body {
 				justify-content: center;
 				border-left: 0.15em $color2 * 1.2 solid;
 				transition: background-color 0.2s;
+				color: $text1;
+				text-decoration: none;
 
 				&:hover {
 					cursor: pointer;

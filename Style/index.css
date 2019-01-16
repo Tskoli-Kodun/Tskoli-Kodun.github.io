@@ -97,7 +97,13 @@ body .uncentered {
   margin: 2em 0 2em 0;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  body .uncentered * {
+    text-decoration: none; }
 
 body #brain {
   width: 65%;
@@ -147,7 +153,9 @@ body header {
       border-left: 0.15em #494a4c solid;
       -webkit-transition: background-color 0.2s;
       -o-transition: background-color 0.2s;
-      transition: background-color 0.2s; }
+      transition: background-color 0.2s;
+      color: azure;
+      text-decoration: none; }
       body header section .header-option:hover {
         cursor: pointer;
         background-color: #494a4c; }

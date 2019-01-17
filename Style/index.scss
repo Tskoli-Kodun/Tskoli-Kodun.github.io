@@ -46,6 +46,11 @@ body {
 		margin: unset;
 	}
 
+	.medium-title {
+		font-size: 32px;
+		margin: unset;
+	}
+
 	.example-info {
 		width: 20em;
 	}
@@ -73,6 +78,26 @@ body {
 		}
 	}
 
+	.pad {
+		margin-bottom: 3em;
+	}
+
+	.tight {
+		* {
+			margin: unset;
+		}
+	}
+
+	.push {
+		margin-left: 40px;
+	}
+
+	.highlight {
+		padding: 0.7em;
+		background-color: $color2;
+		border-radius: 20px;
+	}
+
 	#brain {
 		width: 65%;
 		height: auto;
@@ -81,10 +106,6 @@ body {
 
 	a {
 		color: $color3;
-	}
-
-	pre {
-		background-color: $color2;
 	}
 
 	header {
@@ -130,10 +151,12 @@ body {
 		color: $text2;
 		margin-bottom: 0px !important;
 		width: 100%;
+		height: min-content;
 		background-color: $color2;
 
 		img {
 			width: 25%;
+			margin: 0.5em 0 0.5em 0;
 		}
 
 		div {
@@ -148,7 +171,7 @@ body {
 	}
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1030px) {
 	.unflex {
 		flex-flow: column !important;
 	}
@@ -166,7 +189,7 @@ body {
 		width: 100% !important;
 	}
 
-	header {
+	/*header {
 		height: fit-content !important;
 		section{
 			flex-flow: column;
@@ -178,5 +201,5 @@ body {
 				font-size: 1.5em;
 			}
 		}
-	}
+	}*/
 }

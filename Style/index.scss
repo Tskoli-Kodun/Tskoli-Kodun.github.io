@@ -6,7 +6,16 @@
 	margin: 2em 0 2em 0;
 }
 
+#index-body {
+	display: flex;
+	flex-flow: column;
+	&:last-child {
+		align-self: flex-end;
+	}
+}
+
 body {
+
 	.centered {
 		@include center;
 		margin: 2em 0 2em 0;
@@ -16,6 +25,10 @@ body {
 		@include center;
 		margin: unset;
 		flex-flow: column;
+	}
+
+	.centered-text {
+		text-align: center;
 	}
 
 	.title {
@@ -43,6 +56,11 @@ body {
 
 	.small-title {
 		font-size: 26px;
+		margin: unset;
+	}
+
+	.big-text {
+		font-size: 22px;
 		margin: unset;
 	}
 
@@ -104,6 +122,10 @@ body {
 		margin-left: calc(35%/2);
 	}
 
+	#brain-wrapper {
+		flex-grow: 1;
+	}
+
 	a {
 		color: $color3;
 	}
@@ -153,9 +175,11 @@ body {
 		width: 100%;
 		height: min-content;
 		background-color: $color2;
+		align-self: flex-end;
 
 		img {
-			width: 25%;
+			max-width: 380px;
+			max-height: calc(380px / (959/222));
 			margin: 0.5em 0 0.5em 0;
 		}
 
@@ -187,6 +211,10 @@ body {
 
 	.un-percent {
 		width: 100% !important;
+	}
+
+	.unpush {
+		margin-left: unset !important;
 	}
 
 	/*header {

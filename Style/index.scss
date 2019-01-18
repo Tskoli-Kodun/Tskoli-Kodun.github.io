@@ -3,7 +3,7 @@
 @mixin center {
 	display: flex;
 	justify-content: center;
-	margin: 2em 0 2em 0;
+	margin: 32px 0 32px 0;
 }
 
 #index-body {
@@ -18,7 +18,7 @@ body {
 
 	.centered {
 		@include center;
-		margin: 2em 0 2em 0;
+		margin: 32px 0 32px 0;
 	}
 
 	.centered-column {
@@ -70,12 +70,12 @@ body {
 	}
 
 	.example-info {
-		width: 20em;
+		width: 320px;
 	}
 
 	.invaders {
-		width: 20em;
-		height: 10em;
+		width: 320px;
+		height: 160px;
 	}
 
 	.info {
@@ -97,11 +97,11 @@ body {
 	}
 
 	.pad {
-		margin-bottom: 3em;
+		margin-bottom: 48px;
 	}
 
 	.big-pad {
-		margin-bottom: 5em;
+		margin-bottom: 80px;
 	}
 
 	.tight {
@@ -115,7 +115,7 @@ body {
 	}
 
 	.highlight {
-		padding: 0.7em;
+		padding: 11.2px;
 		background-color: $color2;
 		border-radius: 20px;
 	}
@@ -139,11 +139,11 @@ body {
 		color: $text2;
 		display: flex;
 		user-select: none;
-		height: 4em;
+		height: 64px;
 
 		img {
 			border: unset;
-			margin: 0.1em;
+			margin: 1.6px;
 			height: 90%;
 		}
 
@@ -156,7 +156,7 @@ body {
 				display: flex;
 				flex-flow: column;
 				justify-content: center;
-				border-left: 0.15em $color2 * 1.2 solid;
+				border-left: 2.4px $color2 * 1.2 solid;
 				transition: background-color 0.2s;
 				color: $text1;
 				text-decoration: none;
@@ -167,7 +167,7 @@ body {
 				}
 
 				p {
-					font-size: 2em;
+					font-size: 32px;
 				}
 			}
 		}
@@ -184,11 +184,11 @@ body {
 		img {
 			max-width: 380px;
 			max-height: calc(380px / (959/222));
-			margin: 0.5em 0 0.5em 0;
+			margin: 8px 0 8px 0;
 		}
 
 		div {
-			margin-left: 1em;
+			margin-left: 16px;
 			display: flex;
 			flex-flow: column;
 			justify-content: center;
@@ -209,6 +209,10 @@ body {
 		justify-content: center;
 	}
 
+	.text-unflex {
+		text-align: left;
+	}
+
 	.text-reflex {
 		text-align: center !important;
 	}
@@ -227,6 +231,11 @@ body {
 
 	.enlarge {
 		font-size: 24px;
+	}
+
+	footer {
+		position: relative;
+		bottom: 0;
 	}
 
 	/*header {

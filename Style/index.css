@@ -131,6 +131,9 @@ body .uncentered {
 body .pad {
   margin-bottom: 3em; }
 
+body .big-pad {
+  margin-bottom: 5em; }
+
 body .tight * {
   margin: unset; }
 

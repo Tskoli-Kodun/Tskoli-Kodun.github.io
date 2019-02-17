@@ -120,6 +120,39 @@ body {
 		border-radius: 20px;
 	}
 
+	#examples {
+		.example {
+			margin-bottom: 64px;
+
+			.color2 {
+				background-color: $color2;
+			}
+
+			.example-content {
+				width: 50%;
+				padding: 16px;
+
+				.example-intro {
+					display: flex;
+
+					.example-intro-text {
+						padding-right: 16px;
+
+						.big-text {
+							margin-bottom: 16px;
+						}
+					}
+				}
+
+				.example-mid {
+					.big-text {
+						margin-top: 16px;
+					}
+				}
+			}
+		}
+	}
+
 	#brain {
 		width: 65%;
 		height: auto;
@@ -200,6 +233,10 @@ body {
 }
 
 @media only screen and (max-width: 1030px) {
+	.example-content {
+		width: 100% !important;
+	}
+
 	.unflex {
 		flex-flow: column !important;
 	}

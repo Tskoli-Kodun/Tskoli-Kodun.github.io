@@ -131,6 +131,14 @@ main {
         color: $primary-color;
         margin: 3vh 0;
     }
+
+    h3 {
+        font-size: 3.5vw;
+
+        @include desktop {
+            font-size: 25px;
+        }
+    }
     
     ul {
         width: 80%;

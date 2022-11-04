@@ -73,7 +73,7 @@ body {
             width: 40%;
         }
 
-        ul {
+        ul { 
             list-style-type: none;
             margin: 0;
             padding: .8rem 0;
@@ -105,6 +105,15 @@ main {
     @include desktop {
         margin: auto 20%;
         width: 60%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 40vh;
+        
+        @include desktop {
+            width: 80%;
+        }
     }
 
     button {
@@ -140,7 +149,7 @@ main {
         }
     }
     
-    ul {
+    ul { /* TO BE DELETED */
         width: 80%;
         list-style-type: square;
         margin: auto 10%;
@@ -155,6 +164,19 @@ main {
         li {
             padding: 0 3.5rem;
         }  
+    }
+
+    p {
+        width: 80%;
+
+        margin: auto 10%;
+        padding: 1rem 0;
+        font-family: $primary-font;
+
+        @include desktop {
+            margin: auto 30%;
+            width: 40%;
+        }
     }
 
     a:link, a:visited {

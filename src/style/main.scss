@@ -138,7 +138,7 @@ main {
     h1 {
         font-size: clamp(1.5rem, 15vw, 2.2vw);
         color: $primary-color;
-        margin: 3vh 0;
+        margin: 2vh 0;
     }
 
     h3 {
@@ -176,6 +176,11 @@ main {
         @include desktop {
             margin: auto 30%;
             width: 40%;
+        }
+
+        &.biggened {
+            font-size: larger;
+            padding: .2rem;
         }
     }
 

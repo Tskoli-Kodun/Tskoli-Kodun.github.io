@@ -110,6 +110,7 @@ main {
     iframe {
         width: 100%;
         height: 40vh;
+        filter: invert(100%); /* HALLOWEEN MAP */ 
         
         @include desktop {
             width: 80%;

@@ -25,13 +25,13 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
 
 const el_logo = document.querySelector('#logo');
 const el_nav = document.querySelector('#navbar')
-el_logo.style.setProperty('--animate-duration', '1.5s');
-el_nav.style.setProperty('--animate-duration', '1.5s');
+el_logo.style.setProperty('--animate-duration', '1.3s');
+el_nav.style.setProperty('--animate-duration', '0.8s');
 el_nav.style.setProperty('display', 'none')
 
 
 animateCSS('#logo', 'fadeInUpBig').then((message) => {
-    el_logo.style.setProperty('animation-delay', '.8s');
+    el_logo.style.setProperty('animation-delay', '.4s');
     
     animateCSS('#logo', 'fadeOutUpBig').then((inner_message) => {
         el_logo.style = 'display: none;';
